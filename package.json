@@ -1,0 +1,25 @@
+{
+  "name": "pdf-to-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "processPDFs.ts",
+  "scripts": {
+    "process-pdfs": "npx ts-node -T processPDFs.ts",
+    "serve": "node serve.js",
+    "start": "npm run process-pdfs && npm run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pdf-lib": "^1.17.1",
+    "pdf2html": "^3.1.0",
+    "pdf2json": "^3.0.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.2",
+    "typescript": "^5.4.3"
+  }
+}
